@@ -1,0 +1,77 @@
+.article{
+    
+    width: 360px;
+    height: 350px;
+    margin: $fifty 0 0 44.9px;
+    padding: 21.4px 20.6px 27.3px 30.3px;
+    border-radius: 36px;
+    box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.1);
+    background-color: $white;
+    img{
+        width: 90.1px;
+        height: 90.1px;
+        margin: 0 113.3px 37.6px 112.6px;
+        object-fit: contain;
+    }
+    h2{
+        font-family: $poppins;
+        font-weight: $s-bold;
+        font-size: $sous-titre-card;
+        color: $lightBlack;
+    }
+    p{
+
+        font-family: $lato;
+        font-weight: $regular;
+        font-size: $labeur-card;
+        color: $lightBlack;
+    }
+    button{
+        margin-left: 70%;
+        margin-top: $fifteen-percent;
+    }
+
+}
+.article-price{
+    width: 360px;
+    height: 350px;
+    margin: $fifty 0 0 44.9px;
+    padding: 21.4px 20.6px 27.3px 30.3px;
+    border-radius: 36px;
+    box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.1);
+    background-color: $white;
+    display: flex;
+    flex-flow: column;
+    
+    h2{
+        font-family: $poppins;
+        font-weight: $regular;
+        font-size: $sous-titre-card;
+        color: $lightBlack;
+        margin-top: $ten;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-family: $poppins;
+        font-weight: $light;
+        font-size: $labeur;
+        color: $lightGrey;
+        margin: auto;
+    }
+    h3{
+        font-family: $poppins;
+        font-weight: $s-bold;
+        font-size: 30px;
+        color: $blue;
+        margin-top: $cinq-percent ;
+        margin: auto;
+    }
+    button{
+        margin: auto;
+       
+    }
+    
+    
+
+}

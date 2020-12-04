@@ -1,0 +1,50 @@
+#page3 {
+    display: flex;
+    flex-flow:  wrap;
+    margin-top: $ten;
+    width: $max-with;
+    #titrePage3 {
+        margin-left: $fifteen-percent;
+
+        p {
+            font-family: $lato;
+            font-weight: $regular;
+            font-size: $nav;
+            color: $mauve;
+        }
+
+        h2 {
+            font-family: $poppins;
+            font-weight: $s-bold;
+            font-size: $titre;
+            color: $lightBlack;
+        }
+    }
+}
+
+#article {
+    background-image: url('../assets/img/background-service.png');
+    background-size: cover;
+    background-position-y:$twenty ;
+    // width: $max-with;
+    display: flex;
+    flex-flow: row wrap;
+   justify-content: center;
+}
+
+@media screen and (max-width: $page4){
+    #page3 {
+        margin-bottom: $fifty;
+        #titrePage3 {
+            text-align: center;
+           margin: auto;
+        }
+    }
+    
+}
+
+@media screen and (max-width: $laptop){
+    #page3{
+        width: $max-with;
+    }
+}

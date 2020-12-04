@@ -1,0 +1,223 @@
+///bakground phone right
+main {
+    width: $max-with;
+
+    #page1 {
+        height: 77vh;
+        display: flex;
+
+        img {
+            position: absolute;
+            width: 40%;
+            right:$zero;
+        }
+    }
+}
+
+/////IMG LEFT 
+main {
+    #page1 {
+        #page1Img {
+            width:$demi-percent;
+            position: absolute;
+            left: $cinq-percent ;
+            top: 35%;
+            display: flex;
+            flex-flow: column;
+            align-content: space-between;
+
+            li {
+                list-style: none;
+
+                embed {
+                    width: 2.5%;
+                    margin-top: $fifty;
+                }
+
+                svg {
+                    margin-top:$twenty ;
+                    margin-left: 7px;
+
+                    rect {
+                        color: $mauve;
+                        width: $two;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//Text Buisiness
+main {
+    #page1 {
+        #mainBusiness {
+            display: flex;
+            flex-flow: column;
+            height: 357px;
+            text-align: left;
+            margin-left: 9%;
+            margin-top: 9%;
+            width: $max-with;
+            justify-content: flex-start;
+
+            h2 {
+                width: $max-percent;
+                font-family: $poppins;
+                font-weight: $regular;
+                font-size: $titre;
+                color: $lightBlack;
+
+                span {
+                    width: $ten;
+                    font-family: $poppins;
+                    font-weight: $bold;
+                    font-size: $Btitre;
+                    color: $lightBlack;
+                }
+            }
+
+            p {
+                display: flex;
+                width: 65%;
+                font-family: $poppins;
+                font-weight: $light;
+                font-size: $labeur;
+                color: $lightGrey;
+
+            }
+
+
+        }
+    }
+}
+
+////Mouse {
+#mouse {
+    display: flex;
+    top: 85%;
+    left: 45%;
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    margin: 7.5px 15.9px 00;
+    padding: 19.6px 26.4px 19.2px 26.2px;
+    box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16);
+    border-radius: 53px;
+
+    img {
+        width:$demi-percent;
+        height:$demi-percent;
+        object-fit: contain;
+        margin-right: 30%;
+        align-items: center;
+        margin-top: $ten;
+    }
+}
+
+
+
+#insta {
+    &:after {
+        content: "";
+        display: flex;
+        width: 5px;
+        height: 35px;
+        background: $blueGrad;
+        margin: 20px 0 0 7px;
+
+    }
+}
+
+
+@media screen and (min-width: $laptop) and (max-width: $header) {
+    #mouse {
+        top: 65%;
+    }
+
+    main {
+        #page1 {
+
+            #mainBusiness {
+                margin-left: $two;
+
+                p {
+                    width: $max-percent;
+                }
+            }
+        }
+    }
+
+    main {
+        #page1 {
+            #page1Img {
+                flex-flow: row;
+                top: 18%;
+                left: $cinq-percent ;
+                width: 30%;
+                justify-content: space-around;
+
+                li {
+                    list-style: none;
+
+                    embed {
+                        width: $max-percent;
+                        margin-top: $fifty;
+                    }
+                }
+
+            }
+        }
+    }
+
+    #insta {
+        &:after {
+            content: '';
+            display: table-cell;
+            position: relative;
+            width: 0px;
+            height: 0px;
+        }
+    }
+
+}
+
+@media screen and (max-width: $laptop) {
+    #mouse {
+        display: none;
+
+    }
+
+    #phone {
+        display: none;
+    }
+
+    main {
+        #page1 {
+            width: $max-with;
+            display: flex;
+            height: $max-percent;
+           
+            #page1Img {
+                li {
+                    display: none;
+                }
+            }
+            #mainBusiness{
+                width: $max-percent;
+                margin-top : 5%;
+                display: flex;
+                flex-flow: wrap;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
+    }
+
+}
+
+//créer des variable de media query
+//media query tablette

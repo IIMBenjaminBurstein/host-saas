@@ -1,0 +1,51 @@
+.boutonBleu {
+        width: 230px;
+        height: 49px;
+        padding: 0.08% 0.25%;
+        border-radius: $twenty-five;
+        background-image: $blueGrad;
+        font-family: $poppins;
+        font-weight: $medium;
+        font-size: $labeur;
+        color: $white;
+        margin-top: $twenty-one;
+        border: none;
+    }
+    .boutonBleu-s {
+        width: 170px;
+        height: 48.4px;
+        padding: 0.08% 0.25%;
+        border-radius: $twenty-five;
+        background-image: $blueGrad;
+        color: $white;
+        margin-top: $twenty-one;
+    }
+    .boutonBleu-article{
+        width: 93px;
+        height: 30px;
+        padding: 0.08% 0.25%;
+        border-radius: $twenty-five;
+        background: $blueGrad;
+        color: $white;
+        margin-top: $twenty-one;
+    }
+    .boutonBlanc-price {
+        width: 180px;
+        height: 55px;
+        border-radius: $twenty-five;
+        background-color: $white;
+        color: $lightBlack;
+        font-family: $poppins;
+        font-weight: $medium;
+        border: solid $blue 1px;
+    }
+    .boutonBleu-price {
+        width: 180px;
+        height: 55px;
+        border-radius: $twenty-five;
+        background: $blueGrad;
+        color: $white;
+        font-family: $poppins;
+        font-weight: $medium;
+    }
+

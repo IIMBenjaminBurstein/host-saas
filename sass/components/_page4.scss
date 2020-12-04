@@ -1,0 +1,50 @@
+#page4 {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: $fifteen-percent;
+    background-color: #eceafe;
+    padding-bottom: $cinq-percent ;
+    justify-content: center;
+    #pricing-text {
+        display: flex;
+        flex-flow: column;
+        p{
+            font-family: $lobster;
+            font-weight: $regular;
+            font-size: $sous-titre;
+            color: $mauve;
+            margin: auto;
+            margin-top: 3%;
+        }
+        h2{
+            font-family: $poppins;
+            font-weight: $s-bold;
+            font-size: $titre;
+            color: $lightBlack;
+            margin: auto;
+        }
+    }
+        #article-price {
+            display: flex;
+            flex-flow: row  wrap;
+            margin: auto;
+        }
+    }
+
+    @media screen and (min-width: $laptop) and ( max-width: $page4){
+        #page4 {
+            width: $max-with;
+            #article-price {
+               justify-content: center;
+            }
+        }
+    }
+
+    @media screen and (max-width: $laptop){
+        #page4 {
+            width: $max-with;
+            #article-price {
+                justify-content: center;
+             }
+        }
+    }

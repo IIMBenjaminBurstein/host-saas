@@ -1,0 +1,106 @@
+header {
+    display: flex;
+    flex-flow: row wrap;
+    width: $max-with;
+    justify-content: space-around;
+    height: 13vh;
+    #wave {
+        position: absolute;
+        z-index: -1;
+        width: 54%;
+        right:$zero;
+    }
+
+    div {
+        display: flex;
+        align-items: flex-end;
+        width: 17.5%;
+        justify-content: baseline;
+
+        img {
+            margin-top: $twenty-one;
+            width: $demi-percent;
+        }
+
+        h1 {
+            width: $max-percent;
+            font-family: $poppins;
+            font-weight: $bold;
+            font-size: $fourty;
+            color: $lightBlack;
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        width: 28%;
+        ul{
+            display: flex;
+            flex-flow: row;  
+            justify-content: center;   
+            margin-right: $max-percent;    
+            li {
+                margin-left: $twenty-percent;
+                list-style: none;
+                width: $max-percent;
+                font-family: $poppins;
+                font-weight: $medium;
+                font-size: $labeur;
+                
+            }
+        }
+        
+
+    }
+}
+
+@media screen and (min-width: $laptop) and (max-width: $header) {
+    header {
+        div{
+            margin-right: $twenty-percent;
+        }
+        nav {
+            width: $twenty-percent;
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width: $laptop){
+    header {
+        background-color: $mauve;
+        flex-flow: column;
+        height: 30vh;
+        width: $max-with;
+        img{
+            display: none;
+        }
+        div {
+            display: flex;
+            width: $max-percent;
+            margin-left:$twenty ;
+            img {
+                width: $max-percent;
+            }
+            h1 {
+                
+            }
+        }
+        #nav {
+            display: flex;
+            width: $max-percent;
+            margin-bottom: $cinq-percent ;
+            
+            ul{
+                display: flex;
+                flex-flow: row;         
+                align-self: center;
+                li {
+                    margin-left:$twenty ;
+                }
+            }
+           
+    
+        }
+    }
+}

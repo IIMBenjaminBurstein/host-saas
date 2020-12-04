@@ -1,0 +1,71 @@
+#page5{
+    width: $max-with;
+    #textPage5{
+        display: flex;
+        flex-flow: column wrap;
+        p{
+            font-family: $poppins;
+            font-weight: $regular;
+            font-size: 28px;
+            color: $mauve;;
+            margin: auto;
+        }
+        h2{
+            font-family: $poppins;
+            font-weight: $regular;
+            font-size: 32px;
+            color: $lightBlack;;
+            margin: auto;
+            span{
+                font-weight: $s-bold;
+            }
+        }
+    }
+    #formPage5{
+       display: flex;
+        justify-content: center;
+        margin-top: 3%; 
+        form{
+            display: flex;
+            flex-flow:row;
+            padding-bottom: $cinq-percent ;
+            input {
+                    width: 370px;
+                    height: $fourty;
+                    background-color: #f6f7fb;
+                    margin-right: $cinq-percent ;
+                    margin-top: $cinq-percent ;
+                }
+                button{
+                    ::placeholder{
+                        color: #999999;
+                        font-family: $poppins;
+                        font-weight: $regular;
+                        font-size: $Sbutton;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+}   
+
+@media screen and (max-width: $laptop){
+    #page5{
+        width: $max-with;
+        #textPage5{
+            display: flex;
+            flex-flow: wrap;
+            text-align: center;
+        }
+        #formPage5{
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+            align-items: center;
+            form{
+                flex-flow: column;
+                align-items: center;
+                }
+         }
+    }   
+}

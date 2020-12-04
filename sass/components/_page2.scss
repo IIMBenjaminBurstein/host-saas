@@ -1,0 +1,114 @@
+main {
+    display: flex;
+    flex-flow: column wrap;
+
+    #page2 {
+        display: flex;
+        margin-top: 8%;
+        flex-flow: row;
+        width: 90%;
+
+        #page2Img {
+            width: $max-percent;
+            margin-left: 0%;
+
+            img {
+                width: $max-percent;
+            }
+
+        }
+
+        #mainWho {
+            display: flex;
+            flex-flow: column;
+            width: 85.5%;
+
+            img {
+                position: absolute;
+                z-index: -1;
+                width:$demi-percent;
+                right: $cinq-percent ;
+            }
+
+            #content {
+                margin-top: 12%;
+                margin-left: $ten;
+
+                #bio {
+                    color: $mauve;
+                    font-family: $lobster;
+                    font-weight: $regular;
+                    font-size: $sous-titre;
+                }
+
+                h2 {
+                    color: $lightBlack;
+                    font-family: $poppins;
+                    font-weight: $s-bold;
+                    font-size: $titre;
+                }
+
+                #lorem {
+                    width: 70%;
+                    color: $lightGrey;
+                    font-family: $poppins;
+                    font-weight: $light;
+                    font-size: $labeur;
+                }
+
+                button {
+                    font-family: $poppins;
+                    font-weight: $s-bold;
+                    font-size: $Sbutton;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: $laptop) and (max-width: $page2) {
+    main {
+        #page2 {
+            
+            #mainWho {
+             
+                #content {
+                    margin-bottom:$demi-percent;
+                    #lorem {
+                        width: $max-percent;
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media screen and (max-width: $laptop){
+    main{
+        #page2{
+            #page2Img{
+                display: none;
+            }
+                #mainWho {
+                   margin-right: auto;
+                   width: $max-with;
+                   height: 600px;
+                    display: block;
+                    img{
+                        width: $max-percent;
+                        left:$zero;
+                    }
+                    #content {
+                        margin-bottom:$demi-percent;
+                        
+                        #lorem {
+                            width: $max-percent;
+                            margin: auto;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
